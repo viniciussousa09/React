@@ -1,13 +1,22 @@
-import React from 'react'
+import React from 'react';
 
 const Events = () => {
-  return (
-    <div>
-      <div>
-        <button onClick={() => console.log("testando um evento")}>Clique aqui</button>
-      </div>
-    </div>
-  )
-}
+    const handleClick = (e) => {
+        console.log(e);
+        console.log("Executou");
+    };
 
-export default Events
+    return (
+        <div>
+            <div>
+                <button onClick={() => console.log("testando um evento")}>Clique aqui</button>
+            </div>
+            {/* 7 - evento com função */}
+            <div>
+                <button onClick={handleClick}>Clique aqui - com função</button>
+            </div>
+        </div>
+    );
+};
+
+export default Events;

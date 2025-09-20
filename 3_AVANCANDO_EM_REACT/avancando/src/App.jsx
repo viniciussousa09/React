@@ -6,6 +6,9 @@ import night from './assets/night.jpg';
 // 3 - useState
 import Data from "./components/Data";
 
+// 4 - Renderização de lista
+import ListRender from "./components/ListRender";
+
 function App() {
   return (
     <div className="App" style={{ paddigBottom: "500px" }}>
@@ -16,6 +19,8 @@ function App() {
       <img src={night} alt="Outra imagem" />
       {/* 3 - useState */}
       <Data />
+      {/* render de lista */}
+      <ListRender />
     </div>
   );
 }

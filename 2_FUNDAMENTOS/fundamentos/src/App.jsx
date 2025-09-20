@@ -9,6 +9,9 @@ import TemplateExpression from './components/TemplateExpression';
 
 // 5 - Hierarquia de componentes
 
+// 6 - eventos
+import Events from './components/Events';
+
 function App() {
   // 3 - comentários
   return (
@@ -17,7 +20,8 @@ function App() {
       <h1>Fundamentos do React</h1>
       <FirstComponent />
       <TemplateExpression />
-      <MyComponent/>
+      <MyComponent />
+      <Events />
     </div>
   );
 }

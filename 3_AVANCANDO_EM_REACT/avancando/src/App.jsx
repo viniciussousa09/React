@@ -9,6 +9,9 @@ import Data from "./components/Data";
 // 4 - Renderização de lista
 import ListRender from "./components/ListRender";
 
+// 7 - render condicional
+import ConditionalRender from "./components/ConditionalRender";
+
 function App() {
   return (
     <div className="App" style={{ paddigBottom: "500px" }}>
@@ -21,6 +24,8 @@ function App() {
       <Data />
       {/* render de lista */}
       <ListRender />
+      {/* 7 - render condicional */}
+      <ConditionalRender />
     </div>
   );
 }

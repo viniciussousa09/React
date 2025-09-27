@@ -18,6 +18,14 @@ import ShowUserName from "./components/ShowUserName";
 //  9 - desestruturando props
 import CarDetails from "./components/CarDetails";
 
+//  11 - renderização de listas com componente
+const cars = [
+  { id: 1, brand: "Ferrari", color: "Amarelo", km: 0 },
+  { id: 2, brand: "Kia", color: "Branco", km: 20000 },
+  { id: 3, brand: "Renault", color: "Azul", km: 150000 },
+];
+
+
 function App() {
   return (
     <div className="App" style={{ paddigBottom: "500px" }}>
@@ -39,7 +47,15 @@ function App() {
       {/* 10 - reaproveitamento de componentes */}
       <CarDetails brand="Fiat" km={150000} color="Azul" />
       <CarDetails brand="GM" km={199999} color="Verde" />
-
+      {/* 11 -  renderização de lista com componente */}
+      {cars.map((car) => (
+        <CarDetails
+          key={car.id}
+          brand={car.brand}
+          color={car.color}
+          km={car.km}
+        />
+      ))}
     </div>
   );
 }

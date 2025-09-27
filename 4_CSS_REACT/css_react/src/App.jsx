@@ -7,6 +7,9 @@ function App() {
   // 4 - CSS inline dinâmico
   const n = 15;
 
+  // 5 - classes dinamicas
+  const redTitle = true;
+
   return (
     <div>
       {/* 1 - css global */}
@@ -17,12 +20,14 @@ function App() {
       {/* 3 - inline style */}
       <p style={{ color: "blue", padding: "25px", borderTop: "1px solid dotted" }}>Este elemento tem estilos inline</p>
       {/* 4 - inline style dinamico */}
-      <h2 style={n > 10 ? {color: "purple"} : {color: "magenta"}}>
+      <h2 style={n > 10 ? { color: "purple" } : { color: "magenta" }}>
         CSS dinâmico
       </h2>
-      <h2 style={n > 20 ? {color: "purple"} : {color: "magenta"}}>
+      <h2 style={n > 20 ? { color: "purple" } : { color: "magenta" }}>
         CSS dinâmico 2
       </h2>
+      {/* 5 - classes dinamicas */}
+      <h2 className={redTitle ? "red-title" : "title"}>Este título vai ter uma classe</h2>
     </div>
   );
 }

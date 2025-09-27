@@ -25,6 +25,8 @@ const cars = [
   { id: 3, brand: "Renault", color: "Azul", km: 150000 },
 ];
 
+//  12 - fragments
+import Fragment from "./components/Fragment";
 
 function App() {
   return (
@@ -56,6 +58,8 @@ function App() {
           km={car.km}
         />
       ))}
+      {/* 12 - fragment */}
+      <Fragment />
     </div>
   );
 }

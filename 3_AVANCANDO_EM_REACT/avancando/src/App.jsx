@@ -12,21 +12,25 @@ import ListRender from "./components/ListRender";
 // 7 - render condicional
 import ConditionalRender from "./components/ConditionalRender";
 
-//  8 - props
+// 8 - props
 import ShowUserName from "./components/ShowUserName";
 
-//  9 - desestruturando props
+// 9 - desestruturando props
 import CarDetails from "./components/CarDetails";
 
-//  11 - renderização de listas com componente
+// 11 - renderização de listas com componente
 const cars = [
   { id: 1, brand: "Ferrari", color: "Amarelo", km: 0 },
   { id: 2, brand: "Kia", color: "Branco", km: 20000 },
   { id: 3, brand: "Renault", color: "Azul", km: 150000 },
 ];
 
-//  12 - fragments
+// 12 - fragments
 import Fragment from "./components/Fragment";
+
+// 13 - children
+import Container from "./components/Container";
+import { Children } from "react";
 
 function App() {
   return (
@@ -60,6 +64,12 @@ function App() {
       ))}
       {/* 12 - fragment */}
       <Fragment />
+      {/* 13 - children */}
+      <Container />
+        <p>Alguma coisa</p>
+      <Container />
+        <h2>Teste</h2>
+        <p>Meu componente</p>
     </div>
   );
 }

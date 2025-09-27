@@ -2,6 +2,7 @@ import "./App.css";
 
 // 2 - css de componente
 import MyComponent from "./components/MyComponent";
+import Title from "./components/Title";
 
 function App() {
   // 4 - CSS inline dinâmico
@@ -11,7 +12,7 @@ function App() {
   const redTitle = true;
 
   return (
-    <div>
+    <div className="App">
       {/* 1 - css global */}
       <h1>CSS no React</h1>
       {/* 2 - css de componente */}
@@ -28,6 +29,8 @@ function App() {
       </h2>
       {/* 5 - classes dinamicas */}
       <h2 className={redTitle ? "red-title" : "title"}>Este título vai ter uma classe</h2>
+      {/* 6 css modules */}
+      <Title />
     </div>
   );
 }

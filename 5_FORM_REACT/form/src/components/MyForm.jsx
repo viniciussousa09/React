@@ -19,6 +19,10 @@ const MyForm = ({ userName, userEmail }) => {
 
         // validação
         // envio
+
+        // 7 - limpar form
+        setName("");
+        setEmail("");
     };
 
     console.log(name, email);

@@ -57,7 +57,7 @@ function App() {
       <div className="App">
         <h1>HTTP em React</h1>
         {/* 6 - loading */}
-        {loading &&}
+        {loading && <p>Carregando...</p>}
         {/* 1 - resgate de dados */}
         <ul>
           {items &&

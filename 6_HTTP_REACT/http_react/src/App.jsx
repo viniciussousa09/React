@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   // 2 - envio de dados
-  const [name, setname] = useState("");
+  const [name, setName] = useState("");
   const [price, setPrice] = useState("");
 
   const handleSubmit = async (e) => {
@@ -37,6 +37,12 @@ function App() {
       },
       body: JSON.stringify(product),
     });
+
+    // 3 - carregamento dinamico
+    const addedProduct = await res.json();
+
+    setProducts((prevProducts) => [...prevProducts, addedProduct]);
+
   };
 
   return (

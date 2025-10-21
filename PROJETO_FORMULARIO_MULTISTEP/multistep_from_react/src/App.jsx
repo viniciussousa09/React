@@ -1,9 +1,19 @@
 // Components
-import {GrFormNext, GrFormPrevious} from 'react-icons/gr'
+import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
+import UserForm from "./components/UserForm";
+import ReviewForm from "./components/ReviewForm";
+import Thanks from "./components/Thanks";
+
+// Hooks
+import { userForm } from './components/UserForm';
 
 import "./App.css";
 
 function App() {
+  const formComponents = [<UserForm />, <ReviewForm />, <Thanks />];
+
+  const { currentStep, currentComponent } = userForm(formComponents);
+
   return (
     <div className="app">
       <div className="header">
@@ -14,7 +24,7 @@ function App() {
       <div className="form-container">
         <p>etapas</p>
         <form>
-          <div className="inputs-container"></div>
+          <div className="inputs-container">{currentComponent}</div>
           <div className="actions">
             <button type="button">
               <GrFormPrevious />

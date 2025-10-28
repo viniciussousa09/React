@@ -2,8 +2,13 @@ import React from 'react';
 
 const ReviewForm = () => {
     return (
-        <div>
-            <h2>Review form</h2>
+        <div className='review-form'>
+            <div className="form-control score-container">
+                <label className='radio-container'>
+                    <input type="radio" value="unsatisfeito" name='review' required />
+                    <p>Insatisfeito</p>
+                </label>
+            </div>
         </div>
     );
 };

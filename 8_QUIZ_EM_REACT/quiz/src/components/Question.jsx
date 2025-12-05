@@ -30,6 +30,11 @@ const Question = () => {
                     />
                 ))}
             </div>
+            {!quizState.answerSelected && (
+                <>
+                    {currentQuestion.tip && <button>Dica</button>}
+                </>
+            )}
             {quizState.answerSelected && (
                 <button onClick={() => dispatch({ type: "CHANGE_QUESTION" })}>Continuar</button>
             )}

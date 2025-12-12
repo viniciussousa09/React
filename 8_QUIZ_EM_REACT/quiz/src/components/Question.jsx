@@ -32,7 +32,9 @@ const Question = () => {
             </div>
             {!quizState.answerSelected && (
                 <>
-                    {currentQuestion.tip && <button>Dica</button>}
+                    {currentQuestion.tip && (
+                        <button onClick={() => dispatch({ type: "SHOW_TIP" })}>Dica</button>)}
+                    {quizState.help === "tip" && <p>{currentQuestion.tip}</p>}
                 </>
             )}
             {quizState.answerSelected && (

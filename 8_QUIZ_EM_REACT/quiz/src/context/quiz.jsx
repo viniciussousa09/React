@@ -9,6 +9,7 @@ const initialState = {
     currentQuestion: 0,
     score: 0,
     answerSelected: false,
+    help: false
 };
 
 const QuizReducer = (state, action) => {
@@ -78,6 +79,13 @@ const QuizReducer = (state, action) => {
                 score: state.score + correctAnswer,
                 answerSelected: option,
             };
+
+        case "SHOW_TIP":
+            return {
+                ...state,
+                help: "tip",
+            };
+
 
         default:
             return state;

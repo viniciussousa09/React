@@ -7,8 +7,9 @@ import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 // páginas
 import Home from './routes/Home.jsx';
 import NewPost from './routes/NewPost.jsx';
-import Post from './routes/Post.jsx'
+import Post from './routes/Post.jsx';
 import Admin from './routes/Admin.jsx';
+import EditPost from './routes/EditPost.jsx';
 
 import './index.css';
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <Admin />,
+      },
+      {
+        path: "/posts/edit/:id",
+        element: <EditPost />,
       },
     ],
   },

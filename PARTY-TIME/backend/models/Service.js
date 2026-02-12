@@ -3,24 +3,24 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const serviceSchema = new Schema({
-    name, {
+    name: {
     type: String,
     require: true
 },
-    description, {
+    description: {
     type: String,
     require: true
 },
-    price, {
+    price: {
     type: Number,
     require: true
 },
-    image, {
+    image: {
     type: String,
     require: true
+}
 },
-},
-{ timestamps: true; }
+{ timestamps: true }
 );
 
 const Service = mongoose.model("Service", serviceSchema);

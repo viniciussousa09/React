@@ -9,7 +9,7 @@ async function main() {
 
         console.log("Conectado ao banco!")        
     } catch (error) {
-        console.log(`Ero: ${error}`);
+        console.log(`Error: ${error}`);
     }
 }
 

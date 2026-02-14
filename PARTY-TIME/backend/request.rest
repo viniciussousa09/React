@@ -2,8 +2,11 @@ POST http://localhost:3000/api/services
 Content-Type: application/json
 
 {
-    "name": "Algum serviço",
+    "name": "Algum serviço 2",
     "description": "Alguma descrição",
-    "price": 1400,
+    "price": 1600,
     "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/"
 }
+
+###
+GET http://localhost:3000/api/services

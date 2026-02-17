@@ -16,3 +16,14 @@ GET http://localhost:3000/api/services/698e6289b5a7171441f0369b
 
 ###
 DELETE http://localhost:3000/api/services/698e6289b5a7171441f0369b
+
+###
+PUT http://localhost:3000/api/services/698fbbd53c3ca483932282bb
+Content-Type: application/json
+
+{
+    "name": "TESTE DE ATUALIZAçÃO",
+    "description": "Alguma descrição",
+    "price": 2500,
+    "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/"
+}

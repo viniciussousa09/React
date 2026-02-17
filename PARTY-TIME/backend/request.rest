@@ -27,3 +27,29 @@ Content-Type: application/json
     "price": 2500,
     "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/"
 }
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+        "title": "Meu evento 2",
+        "author": "Vinicius",
+        "description": "Uma festa de aniversário",
+        "budget": 3000, 
+        "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/",
+        "services": [
+            {
+                "name": "Algum serviço 1",
+                "description": "Alguma descrição",
+                "price": 3000,
+                "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/"
+                },
+            {
+                "name": "Algum serviço 2",
+                "description": "Alguma descrição",
+                "price": 1600,
+                "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/"
+            }
+    ]
+}

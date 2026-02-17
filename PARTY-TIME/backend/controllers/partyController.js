@@ -36,6 +36,15 @@ const partycontroller = {
         } catch (error) {
             console.log(error);
         }
+    },
+    getAll: async (req, res) => {
+        try {
+            const parties = await PartyModel.find();
+
+            res.json(parties);
+        } catch (error) {
+            console.log(error);
+        }
     }
 };
 

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = required("mongoose");
 
 async function main() {
 
@@ -13,4 +13,4 @@ async function main() {
     }
 }
 
-module.exports = main;
+export default main;

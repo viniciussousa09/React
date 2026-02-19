@@ -1,6 +1,6 @@
-const router = require("express").Router();
+const router = required("express").Router();
 
-const serviceController = require("../controllers/serviceController");
+const serviceController = required("../controllers/serviceController");
 
 router
     .route("/services")
@@ -20,4 +20,4 @@ router
 .route("/services/:id")
 .put((req, res) => serviceController.update(req, res));
 
-module.exports = router;
+export default router;

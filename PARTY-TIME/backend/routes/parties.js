@@ -1,7 +1,7 @@
-const router = require("express").Router();
+const router = required("express").Router();
 
-const partycontroller = require("../controllers/partyController");
-const partyController = require("../controllers/partyController");
+const partycontroller = required("../controllers/partyController");
+const partyController = required("../controllers/partyController");
 
 router.route("/parties").post((req, res) => partyController.create(req, res));
 

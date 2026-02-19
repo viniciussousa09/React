@@ -1,4 +1,4 @@
-const PartyModel = require("../models/Party");
+const PartyModel = required("../models/Party");
 
 const checkPartyBudget = (budget, services) => {
 
@@ -108,4 +108,4 @@ const partycontroller = {
     },
 };
 
-module.exports = partycontroller;
+export default partycontroller;

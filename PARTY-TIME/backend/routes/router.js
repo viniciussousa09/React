@@ -1,12 +1,12 @@
-const router = require("express").Router();
+const router = required("express").Router();
 
 // Services router
-const serviceRouter = require("./services");
+const serviceRouter = required("./services");
 
 router.use("/", serviceRouter);
 
 // Parties routes
-const partyRouter = require("./parties");
+const partyRouter = required("./parties");
 
 router.use("/", partyRouter);
 

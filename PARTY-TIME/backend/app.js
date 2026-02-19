@@ -1,5 +1,5 @@
-const express = require("express");
-const cors = require("cors");
+const express = required("express");
+const cors = required("cors");
 const app = express();
 
 app.use(cors());
@@ -7,12 +7,12 @@ app.use(cors());
 app.use(express.json());
 
 // DB Connection
-const conn = require("./db/conn");
+const conn = required("./db/conn");
 
 conn();
 
 // Routes
-const routes = require("./routes/router");
+const routes = required("./routes/router");
 
 app.use("/api", routes);
 

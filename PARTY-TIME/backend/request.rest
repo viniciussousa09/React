@@ -5,7 +5,7 @@ Content-Type: application/json
     "name": "Algum serviço 2",
     "description": "Alguma descrição",
     "price": 1600,
-    "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/"
+    "image": "https://as2.ftcdn.net/v2/jpg/02/67/05/15/1000_F_267051546_MzSxMfTFnBQpNiIEdPn2uaulOFwRJElW.jpg"
 }
 
 ###
@@ -25,7 +25,7 @@ Content-Type: application/json
     "name": "TESTE DE ATUALIZAçÃO",
     "description": "Alguma descrição",
     "price": 2500,
-    "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/"
+    "image": "https://as2.ftcdn.net/v2/jpg/02/67/05/15/1000_F_267051546_MzSxMfTFnBQpNiIEdPn2uaulOFwRJElW.jpg"
 }
 
 ###
@@ -37,19 +37,19 @@ Content-Type: application/json
         "author": "Vinicius",
         "description": "Uma festa de aniversário",
         "budget": 3000, 
-        "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/",
+        "image": "https://as2.ftcdn.net/v2/jpg/02/67/05/15/1000_F_267051546_MzSxMfTFnBQpNiIEdPn2uaulOFwRJElW.jpg",
         "services": [
             {
                 "name": "Algum serviço 1",
                 "description": "Alguma descrição",
                 "price": 3000,
-                "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/"
+                "image": "https://as2.ftcdn.net/v2/jpg/02/67/05/15/1000_F_267051546_MzSxMfTFnBQpNiIEdPn2uaulOFwRJElW.jpg",
                 },
             {
                 "name": "Algum serviço 2",
                 "description": "Alguma descrição",
                 "price": 1600,
-                "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/"
+                "image": "https://as2.ftcdn.net/v2/jpg/02/67/05/15/1000_F_267051546_MzSxMfTFnBQpNiIEdPn2uaulOFwRJElW.jpg"
             }
     ]
 }
@@ -72,19 +72,19 @@ Content-Type: application/json
         "author": "Vinicius",
         "description": "Uma festa de aniversário",
         "budget": 10000, 
-        "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/",
+        "image": "https://as2.ftcdn.net/v2/jpg/02/67/05/15/1000_F_267051546_MzSxMfTFnBQpNiIEdPn2uaulOFwRJElW.jpg",
         "services": [
             {
                 "name": "Algum serviço 1",
                 "description": "Alguma descrição",
                 "price": 3000,
-                "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/"
+                "image": "https://as2.ftcdn.net/v2/jpg/02/67/05/15/1000_F_267051546_MzSxMfTFnBQpNiIEdPn2uaulOFwRJElW.jpg"
                 },
             {
                 "name": "Algum serviço 2",
                 "description": "Alguma descrição",
                 "price": 1600,
-                "image": "https://www.pexels.com/pt-br/foto/cidade-meio-urbano-ponto-de-referencia-ponto-historico-18173404/"
-            }
+                "image": "https://as2.ftcdn.net/v2/jpg/02/67/05/15/1000_F_267051546_MzSxMfTFnBQpNiIEdPn2uaulOFwRJElW.jpg"
+            },
     ]
 }

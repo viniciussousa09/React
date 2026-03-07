@@ -10,4 +10,4 @@ const partyRouter = required("./parties");
 
 router.use("/", partyRouter);
 
-module.exports = router;
+export default router;

@@ -13,4 +13,4 @@ router.route("/parties/:id").delete((req, res) => partyController.delete(req, re
 
 router.route("/parties/:id").put((req, res) => partycontroller.update(req, res));
 
-module.exports = router;
+export default router;

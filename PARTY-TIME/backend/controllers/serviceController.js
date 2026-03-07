@@ -86,5 +86,5 @@ const serviceController = {
     }
 };
 
-module.exports = serviceController;
+export default serviceController;
 

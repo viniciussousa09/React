@@ -1,23 +1,23 @@
-const router = required("express").Router();
+const router = require("express").Router();
 
-const serviceController = required("../controllers/serviceController");
+const serviceController = require("../controllers/serviceController");
 
 router
-    .route("/services")
-    .post((req, res) => serviceController.create(req, res));
+  .route("/services")
+  .post((req, res) => serviceController.create(req, res));
 
 router.route("/services").get((req, res) => serviceController.getAll(req, res));
 
 router
-    .route("/services/:id")
-    .get((req, res) => serviceController.getAll(req, res));
+  .route("/services/:id")
+  .get((req, res) => serviceController.get(req, res));
 
 router
-    .route("/services/:id")
-    .delete((req, res) => serviceController.delete(req, res));
+  .route("/services/:id")
+  .delete((req, res) => serviceController.delete(req, res));
 
 router
-.route("/services/:id")
-.put((req, res) => serviceController.update(req, res));
+  .route("/services/:id")
+  .put((req, res) => serviceController.update(req, res));
 
-export default router;
+module.exports = router;

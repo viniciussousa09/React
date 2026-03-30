@@ -1,31 +1,29 @@
-const mongoose = required("mongoose");
+const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
 
-const serviceSchema = new Schema({
+const serviceSchema = new Schema(
+  {
     name: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     },
     description: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     },
     price: {
-        type: Number,
-        required: true
+      type: Number,
+      required: true,
     },
-    image: {
-        type: String,
-        required: true
-    }
-},
-    { timestamps: true }
+    image: String,
+  },
+  { timestamps: true }
 );
 
 const Service = mongoose.model("Service", serviceSchema);
 
-export default {
-    Service,
-    serviceSchema,
+module.exports = {
+  Service,
+  serviceSchema,
 };

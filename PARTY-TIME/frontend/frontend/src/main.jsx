@@ -1,13 +1,15 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import './index.css';
-import App from './App.jsx';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // pages
-import Home from './routes/Home.jsx';
-import CreateParty from './routes/CreateParty.jsx';
+import Home from "./routes/Home";
+import CreateParty from "./routes/CreateParty";
+import Party from "./routes/Party";
+import EditParty from "./routes/EditParty";
 
 const router = createBrowserRouter([
   {
@@ -20,14 +22,24 @@ const router = createBrowserRouter([
       },
       {
         path: "/party/new",
-        element: <CreateParty />
-      }
-    ]
-  }
+        element: <CreateParty />,
+      },
+      {
+        path: "/party/:id",
+        element: <Party />,
+      },
+      {
+        path: "/party/edit/:id",
+        element: <EditParty />,
+      },
+    ],
+  },
 ]);
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </React.StrictMode>
 );
